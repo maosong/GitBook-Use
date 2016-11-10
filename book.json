@@ -1,0 +1,8 @@
+{
+    "title": "GitBook 使用说明",
+    "author": "maosong",
+    "language": "zh-hans",
+    "plugins": [
+        "-sharing"
+    ]
+}
