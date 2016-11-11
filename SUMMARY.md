@@ -7,4 +7,5 @@
 * [命令](command.md)
 * [制作](mark.md)
 * [配置](config.md)
+* [皮肤](theme.md)
 * [插件](plugin.md)
