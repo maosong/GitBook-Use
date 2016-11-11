@@ -23,7 +23,7 @@ $ npm install
 
 ## 修改相关文件
 
-首先，我们将 theme-default 改名为 theme-maosong（请把 maosong 替换为你的模板名称）。
+首先，我们将 theme-default 改名为 theme-maosong（请把 maosong 替换为你的皮肤名称）。
 
 ```bash
 $ mv theme-default theme-maosong
@@ -115,7 +115,7 @@ $ npm publish
 
 ## 在项目中使用
 
-回到我们的 gitbook-first 项目，修改 book.json 文件增加新模板。
+回到我们的 gitbook-first 项目，修改 book.json 文件增加新皮肤。
 
 ```javascript
 {
@@ -125,9 +125,17 @@ $ npm publish
 }
 ```
 
-使用 gitbook 安装新模板，然后重新编译看看效果吧。
+使用 gitbook 安装新皮肤，然后重新编译看看效果吧。
 
 ```bash
 $ gitbook install
 $ gitbook build
+```
+
+## 撤销发布
+
+现在我们把演示用的皮肤删除。
+
+```bash
+$ npm unpublish --force gitbook-plugin-theme-maosong
 ```
