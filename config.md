@@ -19,16 +19,30 @@ gitbook 的配置文件 book.json 非常强大，允许我们设计电子书的�
     },
     "plugins": [
         "-sharing",
-        "theme-default"
+        "theme-api"
     ],
     "pluginsConfig": {
-        "theme-default": {
+        "theme-api": {
             "showLevel": true
         }
     }
 }
 ```
 
-可以看到，我们定义了标题(title)、作者(author)、语言(language)，并增加了一个站外链接(links)。我们关闭了分享插件，并对默认皮肤启用了章节序号功能。
+可以看到，我们定义了标题(title)、作者(author)、语言(language)和站外链接(links)，并附加了一个样式表文件(website.css)。插件方面，关闭了分享插件，并使用新的皮肤(theme-api)启用章节序号功能。
 
-现在再次编译看看效果吧。
+增加样式表 styles/website.css 文件
+
+```css
+h1, h2 {
+    border-bottom: 1px solid #dcdcdc;
+}
+```
+
+因为使用了新的皮肤(theme-api)，如果之前没有安装过，需要使用 gitbook 命令行安装。
+
+```bash
+$ gitbook install
+```
+
+大功告成，现在再次编译看看效果吧。
